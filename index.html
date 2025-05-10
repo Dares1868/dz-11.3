@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <img id="randomImage" src="" alt="Випадкове зображення" />
+    <script>
+      const images = [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.jpg",
+      ];
+
+      const randomIndex = Math.floor(Math.random() * images.length);
+      document.getElementById("randomImage").src = images[randomIndex];
+    </script>
+  </body>
+</html>
